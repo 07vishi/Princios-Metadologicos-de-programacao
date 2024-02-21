@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Types Of Methodology </title>
+    <style>
+        body {
+      transition: background-color 0.5s, color 0.5s;
+    }
+
+    /* Light mode styles */
+    body.light-mode {
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    /* Dark mode styles */
+    body.dark-mode {
+      background-color: #1a1a1a;
+      color: #ffffff;
+    }
+  
+    </style>
+</head>
+ <body class="light-mode">
+    <label for="darkModeToggle">Dark Mode</label>
+             <input type="checkbox" id="darkModeToggle">
+    <h1>Types Of Methodologies </h1>
+    <p>In programming, methodologies refer to the systematic approaches or frameworks that guide the software development process. Different methodologies provide various techniques, practices, and guidelines for tasks such as planning, structuring, and controlling the process of developing an information system. Here are some common types of methodologies in programming:</p>
+    <ol>
+        <li> Waterfall Model </li>
+        <li> Agile Methodology:</li>
+        <li> Scrum</li>
+        <li> Kanban</li>
+        <li> Extreme Programming (XP)</li>
+        <li> Iterative Model</li>
+        <li> Spiral Model </li>
+      
+
+    </ol>
+    <div class="red.bgblue">
+          <h2> WATERFALL METHODOLOGY </h2>
+          <p> The Waterfall methodology — also known as the Waterfall model — is a sequential development process that flows like a waterfall through all phases of a project (analysis, design, development, and testing, for example), with each phase completely wrapping up before the next phase begins.</p>
+
+          <center> <h2> 5 Common Stage Of Waterfall Methodology </h2> </center>
+
+          <br>
+         <center> <img src="Waterfall Methodology.png" alt="Waterfall"> </center>
+          
+        
+        <h2> Agile Methodology </h2>
+        <p>The Agile methodology is a project management approach that involves breaking the project into phases and emphasizes continuous collaboration and improvement. Teams follow a cycle of planning, executing, and evaluating. </p>
+
+        <center> <img src="Agile methodology.jpeg" alt="Agile"> </center>
+         <h2>Scrum </h2>
+         <p>Scrum is a framework for agile project management that is widely used in software development but can be applied to other fields as well. It provides a structured yet flexible way for teams to work together to develop and deliver high-quality products. Scrum emphasizes collaboration, transparency, and adaptability, allowing teams to respond quickly to changing requirements.</p>
+
+         <center> <img src="scrum-img.png" alt="scrum"> </center>
+
+         <h2>Kanban</h2>
+         <p> Kanban methodology is an agile method that aims at continuous improvement, flexibility in task management, and enhanced workflow. With this illustrative approach, the progress of the whole project can be easily understood in a glance. </p>
+
+        <center> <img src="Kanban.png" alt="kanban"> </center>
+
+         <h2> Extreme Programming (XP) </h2>
+         <p> This form of agile software development – known as Extreme Programming or XP – relies heavily on pair programming. Like other agile methodologies, it emphasizes rapid iterations and frequent requirement changes. It was created by Kent Beck, who was one of the signatories of the Agile Manifesto and published a book called “Extreme Programming Explained: Embrace Change” in 1999.
+
+         </p>
+         <br>
+         <center> <img src="Extreme programming.jpg" alt="Extreme programming"> </center>
+
+         <h2> Iterative  Model </h2>
+             <p> The Iterative Model is a software development model in which the development process is divided into small, manageable parts called iterations. Each iteration represents a portion of the complete development cycle. In this model, the development team revisits and refines the product through multiple iterations until the final product is produced. </p> 
+             <br>      
+             <center> <img src="Iterative.png" alt="Iterative"> </center> 
+             
+             <h2> Spiral Mode </h2>
+             <p> First described in the mid-1980s by Barry Boehm, the spiral model is a risk-driven model that incorporates elements of waterfall, incremental, prototyping and other software development approaches. It says that developers should make decisions based on the level of risk and that they should only do enough work to minimize the risk. </p>
+             <br>
+             <center> <img src="Spiral.jpg" alt="Spiral"></center>
+             <a href="Programming Methodological Principles.html"> BACK TO HOME. </a>
+
+             <!--<label for="darkModeToggle">Dark Mode</label>
+             <input type="checkbox" id="darkModeToggle">-->
+             <script>
+                const darkModeToggle = document.getElementById('darkModeToggle');
+                const body = document.body;
+            
+                // Check the user's preference in localStorage
+                const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+            
+                // Apply the initial theme based on user preference
+                if (isDarkMode) {
+                  enableDarkMode();
+                }
+            
+                // Toggle dark mode on checkbox change
+                darkModeToggle.addEventListener('change', () => {
+                  if (darkModeToggle.checked) {
+                    enableDarkMode();
+                  } else {
+                    disableDarkMode();
+                  }
+                });
+            
+                function enableDarkMode() {
+                  body.classList.add('dark-mode');
+                  localStorage.setItem('darkMode', 'enabled');
+                }
+            
+                function disableDarkMode() {
+                  body.classList.remove('dark-mode');
+                  localStorage.setItem('darkMode', null);
+                }
+              </script>
+
+            
+
+             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+          </div>
+
+</body>
+</html>

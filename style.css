@@ -1,0 +1,37 @@
+
+           ¨*{
+            margin: 10px;
+            padding: 10px;
+
+           }
+           body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+                background-image: url();
+            }
+    
+            h1 {
+                color: #1d1b1b;
+            }
+    
+            p {
+                color: #252525;
+            }
+            div{
+                color: black;
+                margin: 10px;
+                padding: 10px;
+                
+            }
+            .red{
+                background-color: rgb(255, 255, 243);
+            }
+            .blue{
+             color: rgb(10, 10, 10);
+            }
+            .bgblue {
+            margin: 10px;
+            padding: 10px;
+            color: rgb(0, 0, 0);
+            }
+
